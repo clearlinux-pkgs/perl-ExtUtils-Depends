@@ -4,7 +4,7 @@
 #
 Name     : perl-ExtUtils-Depends
 Version  : 0.405
-Release  : 2
+Release  : 3
 URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.405.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.405.tar.gz
 Summary  : unknown
@@ -63,7 +63,7 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.26.1/ExtUtils/Depends.pm
+/usr/lib/perl5/vendor_perl/5.28.0/ExtUtils/Depends.pm
 
 %files dev
 %defattr(-,root,root,-)
