@@ -4,7 +4,7 @@
 #
 Name     : perl-ExtUtils-Depends
 Version  : 0.8000
-Release  : 17
+Release  : 18
 URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8000.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8000.tar.gz
 Summary  : The Perl depends module
