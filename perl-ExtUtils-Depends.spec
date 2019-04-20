@@ -4,10 +4,10 @@
 #
 Name     : perl-ExtUtils-Depends
 Version  : 0.8000
-Release  : 16
+Release  : 17
 URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8000.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8000.tar.gz
-Summary  : unknown
+Summary  : The Perl depends module
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
 BuildRequires : buildreq-cpan
