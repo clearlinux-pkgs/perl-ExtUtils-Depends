@@ -4,12 +4,13 @@
 #
 Name     : perl-ExtUtils-Depends
 Version  : 0.8000
-Release  : 19
+Release  : 20
 URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8000.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8000.tar.gz
-Summary  : The Perl depends module
+Summary  : unknown
 Group    : Development/Tools
 License  : Artistic-1.0-Perl
+Requires: perl-ExtUtils-Depends-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 
 %description
@@ -27,14 +28,24 @@ Requires: perl-ExtUtils-Depends = %{version}-%{release}
 dev components for the perl-ExtUtils-Depends package.
 
 
+%package perl
+Summary: perl components for the perl-ExtUtils-Depends package.
+Group: Default
+Requires: perl-ExtUtils-Depends = %{version}-%{release}
+
+%description perl
+perl components for the perl-ExtUtils-Depends package.
+
+
 %prep
 %setup -q -n ExtUtils-Depends-0.8000
+cd %{_builddir}/ExtUtils-Depends-0.8000
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
-export LANG=C
+export LANG=C.UTF-8
 if test -f Makefile.PL; then
 %{__perl} Makefile.PL
 make  %{?_smp_mflags}
@@ -44,7 +55,7 @@ else
 fi
 
 %check
-export LANG=C
+export LANG=C.UTF-8
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
@@ -64,8 +75,11 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.28.2/ExtUtils/Depends.pm
 
 %files dev
 %defattr(-,root,root,-)
 /usr/share/man/man3/ExtUtils::Depends.3
+
+%files perl
+%defattr(-,root,root,-)
+/usr/lib/perl5/vendor_perl/5.30.1/ExtUtils/Depends.pm
