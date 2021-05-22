@@ -4,7 +4,7 @@
 #
 Name     : perl-ExtUtils-Depends
 Version  : 0.8001
-Release  : 27
+Release  : 28
 URL      : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8001.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/X/XA/XAOC/ExtUtils-Depends-0.8001.tar.gz
 Summary  : unknown
